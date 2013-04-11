@@ -1,0 +1,42 @@
+{
+  "name": "getprove",
+  "description": "Prove API wrapper",
+  "version": "0.0.1",
+  "author": "Nick Baugh <niftylettuce@gmail.com>",
+  "contributors": [
+    {
+      "name": "Nick Baugh",
+      "email": "niftylettuce@gmail.com"
+    }
+  ],
+  "keywords": [
+    "prove",
+    "phone",
+    "verification",
+    "sms",
+    "verify",
+    "text",
+    "message",
+    "pin"
+  ],
+  "homepage": "https://github.com/getprove/prove-node",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/getprove/prove-node.git"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  },
+  "main": "index",
+  "dependencies": {
+    "underscore": "~1.4.3",
+    "async": "~0.1.22"
+  },
+  "devDependencies": {
+    "vows": "*"
+  },
+  "scripts": {
+    "test": "vows test/*"
+  }
+}
