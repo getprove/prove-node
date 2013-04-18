@@ -1,7 +1,7 @@
 {
   "name": "getprove",
   "description": "Prove API wrapper",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Nick Baugh <niftylettuce@gmail.com>",
   "contributors": [
     {

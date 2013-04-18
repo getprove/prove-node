@@ -34,10 +34,13 @@ function responseHandler(req, callback) {
   })
 }
 
-module.exports = function(apiKey) {
+module.exports = function(apiKey, devMode) {
 
   if (typeof apiKey !== 'string')
     return console.error('prove - `apiKey` not defined')
+
+  if (typeof devMode !== 'boolean')
+    devMode = false
 
   function prepareRequest(method, path, data, cb) {
 
@@ -76,7 +79,7 @@ module.exports = function(apiKey) {
     }
 
     var requestOptions = {
-        host    : 'getprove.com'
+        host    : (devMode) ? 'dev.getprove.com' : 'getprove.com'
       , port    : '443'
       , path    : path
       , auth    : apiKey + ':'
