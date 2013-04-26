@@ -85,7 +85,7 @@ module.exports = function(apiKey, devMode) {
       , auth    : apiKey + ':'
       , method  : method
       , headers : headers
-      , rejectUnauthorized: devMode
+      , rejectUnauthorized: !devMode
     }
 
     var req = https.request(requestOptions)
