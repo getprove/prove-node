@@ -1,8 +1,9 @@
 
-# prove-node <sup>0.0.2</sup>
+# prove-node <sup>0.0.3</sup>
 
 [Prove](https://getprove.com/) API wrapper for Node.
 
+* 0.0.3 - Added support for `rejectUnauthorized` for devMode
 * 0.0.2 - Added devMode parameter to toggle host
 * 0.0.1 - Initial release
 
