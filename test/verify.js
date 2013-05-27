@@ -42,7 +42,7 @@ vows.describe('verify').addBatch({
         assert.isNull(err)
         assert.isDefined(verify)
         assert.isDefined(verify.id)
-        getprove.verify.pin(verify.id, "1337", that.callback)
+        getprove.verify.pin(verify.id, "000000", that.callback)
       })
     }, 'returns verify': function(err, verify) {
       assert.isNull(err)
@@ -71,7 +71,7 @@ vows.describe('verify').addBatch({
         assert.isNull(err)
         assert.isDefined(verify)
         assert.isDefined(verify.id)
-        getprove.verify.pin(verify.id, "1337", function(err, verify) {
+        getprove.verify.pin(verify.id, "000000", function(err, verify) {
           assert.isNull(err)
           assert.isDefined(verify)
           assert.isTrue(verify.verified)
