@@ -31,7 +31,7 @@ function createVerification(err, verify) {
   // ...
 
   // Verify a pin (you'd use something like `req.body.pin`)
-  var pin = "1337" // since we're in test mode it's always 1337
+  var pin = "000000" // since we're in test mode it's always 000000
   getprove.verify.pin(verify.id, pin, function(err, verify) {
     if (err) throw err
     console.log('Verify a pin', verify)
