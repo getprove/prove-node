@@ -61,9 +61,9 @@ module.exports = function(apiKey, devMode) {
     var requestData = querystring.stringify(data)
 
     var headers = {
-        'Accept'          : 'application/json'
-      , 'User-Agent'      : 'Prove-Node'
-      , 'X-EasyPost-Node' : version
+        'Accept'       : 'application/json'
+      , 'User-Agent'   : 'Prove-Node'
+      , 'X-Prove-Node' : version
     }
 
     var post = false

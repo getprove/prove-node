@@ -3,6 +3,7 @@
 
 [Prove](https://getprove.com/) API wrapper for Node.
 
+* 0.0.5 - Typo fix
 * 0.0.4 - Changed test pin from 1337 to 000000
 * 0.0.3 - Added support for `rejectUnauthorized` for devMode
 * 0.0.2 - Added devMode parameter to toggle host
